@@ -1,0 +1,143 @@
+/**{
+	border: 2px solid navy;
+}*/
+
+body{
+	font-family: Helvetica, arial, sans-serif;
+	font-color: #111;
+}
+
+#container{
+	display: flex;
+	width: 80%;
+	margin: 2% auto;
+}
+
+#leftCol{
+	flex: 1;
+}
+
+#rightCol{
+	flex: 3;
+	padding-left: 2%;
+}
+
+#photo img{
+	max-width: 100%;
+	border-radius: 5%;
+}
+
+#name{
+	font-size: 2em;
+	margin-top: -1%;
+	margin-bottom: -0.5%;
+}
+
+#username{
+	margin-top: -1%;
+	color: #666;
+	font-weight: 300;
+}
+
+#info > div > *{
+	display: inline-block;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+i{
+	color: #666;
+	/*font-weight: 300;*/
+	margin-right: 3%;
+}
+
+#stats{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#stats > div > div {
+	color: #4078c0;
+	font-weight: bold;
+	text-align: center;
+}
+
+#stats > div > p{
+	margin-top: 1%;
+	color: #767676;
+	font-size: 0.5em;
+}
+
+#repoList{
+	display: flex;
+	flex-direction: column;
+}
+
+.repo{
+	display: flex;
+	border-bottom: 2px solid #888;
+	margin-top: 2%;
+}
+
+.leftColRepo{
+	flex: 3;
+}
+
+.repoDesc{
+	font-size: 1em;
+}
+
+.leftColRepo p{
+	color: #666;
+}
+
+.rightColRepo{
+	display: flex;
+	justify-content: flex-end;
+	flex: 2;
+	color: #888;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.rightColRepo i{
+	display: inline;
+	padding-right: 10%;
+}
+
+.rightColRepo div{
+	padding-left: 10%;
+}
+
+li {
+	list-style: none;
+	color: #4078c0;
+	font-weight: bold;
+	line-height: 1.2;
+	font-size: 20px;
+}
+
+li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#searchBox > *{
+	display: inline;
+}
+
+#searchBox p {
+	color: hsla(197, 100%, 20%, 1.0);
+	font-weight: bold;
+	padding-right: 10%;
+	letter-spacing: .2em;
+}
+
+#searchBox{
+	padding: 3%;
+	background-color: #7FDBFF;
+	opacity: 70%;
+	/*border: 1px solid #ddd;*/
+	border-radius: 1%;
+}
