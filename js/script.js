@@ -1,10 +1,16 @@
 var genParamString = function(paramObject) {
     var outputString = '?'
-    for (var key in paramObject) {
-     	outputString += key + '=' + paramObject[key] + '&'
-    }
-    return outputString.substr(0,outputString.length - 1)
+    if(token !== ''){
+       for (var key in paramObject) {
+        outputString += key + '=' + paramObject[key] + '&'
+        return outputString.substr(0,outputString.length - 1)
+
+       }
+   } else {
+       return token
+   }
 }
+
 try {
 	var token = GLOBAL_TOKEN
 }
